@@ -1,0 +1,144 @@
+*{
+    margin: 0px;
+    margin-bottom: 0;
+}
+
+body{
+    background: 
+    linear-gradient(135deg, black 25%, transparent 25%) -50px 0,
+    linear-gradient(225deg, black 25%, transparent 25%) -50px 0,
+    linear-gradient(315deg, black 25%, transparent 25%),
+    linear-gradient(45deg, black 25%, transparent 25%);	
+    background-size: 2em 2em;
+    background-color: #232323;
+    font-family: 'Montserrat', sans-serif;   
+    font-size: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    padding: 10px;
+    justify-items: center;
+
+}
+
+
+header{
+    width: 96%;
+    height: 60px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-self: center;
+    justify-content: space-around;
+    padding: 10px;
+    position: fixed;
+    top: 50;
+    right: 50;
+    backdrop-filter: blur(2px);
+    background-color: rgba(255, 255, 255, 0.5); 
+}
+
+
+#header-img{
+    width: 80px;
+}
+
+#nav-bar{
+    width: 25%;
+    display: flex;
+    justify-content: space-around;
+    position: fixed;
+    top: 50;
+    right: 50;
+
+}
+
+#nuestros-trabajos{
+    width: 96%;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border: 2px solid black;
+    padding-top: 100px;
+    display: flex;
+    flex-direction: column;
+    text-justify: center;
+    text-align: center;
+    align-items: center;
+    border-radius: 10px;
+}
+
+.galeria{
+    font-size: 25px;
+    display: flexbox;
+    flex-direction: column;
+}
+
+.empresarial{
+    width: 400px;
+    margin: 10px;
+    border-radius: 10px;
+    max-height: 520px;
+}
+
+.residencial{
+    width: 400px;
+    margin: 10px;
+    border-radius: 10px;
+    max-height: 260px;
+}
+
+#contacto{
+    width: 96%;
+    height: 300px;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border: 2px solid black;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    border-radius: 10px;
+}
+
+#historia{
+    width: 96%;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border: 2px solid black;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    border-radius: 10px;
+}
+
+footer{
+    width: 96%;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border: 2px solid black;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    border-radius: 10px;
+}
+
+a:link{
+    text-decoration: none;
+    color: rgb(50, 50, 50)
+}
+  
+  a:visited{
+    color: rgb(50, 50, 50)
+  }
+  
+  a:hover{
+    font-size: 1.1em;
+    color:rgba(255, 255, 255, 0.5)
+  }
+
+
+  @media (max-height: 800px){
+    p{
+      font-size: 15px;
+    }
+  }

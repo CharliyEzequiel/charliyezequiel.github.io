@@ -1,0 +1,158 @@
+*{
+  margin: 5px;
+  margin-bottom: 5px;
+  padding: 0;
+  
+}
+
+body{
+  background: url(concert.jpg) no-repeat fixed;
+  background-size: cover;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+ 
+}
+
+#main{
+  height: 100vh;
+  width: 100vw;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  grid-gap: 10px;
+  font-size: 20px;
+ padding-bottom: 100px;
+}
+
+#header{
+  background-color: rgba(255, 255, 255, 0.5);
+  border: 2px solid grey;
+  height: auto;
+  width: 85%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 150px 150px;
+  justify-self: center;
+  justify-items: end;
+  text-align: end;
+}
+
+#title{
+  display: grid;
+  justify-self: end;
+  align-content: end;
+}
+
+#img-div{
+  text-align: start; 
+  font-size: 15px;
+  display: grid;
+  grid-template-columns: auto minmax(100px,300px);
+  justify-self: start;
+  align-items: end;
+
+  }
+
+img{
+  width: 250px;
+}
+
+
+#image{
+  display: grid;
+  max-width: 100%;
+  height: auto;
+  }
+
+#tribute-info{
+  border: 2px solid grey;
+  background-color: rgba(255, 255, 255, 0.6);
+  padding: 5px;
+  text-align: center;
+  height: auto;
+  width: 85%;
+  display: grid;
+  justify-content: center;
+  justify-self: center;
+  justify-items: end;
+}
+
+
+
+#article{
+  text-align: center;
+  width: 100%;
+  height: auto;
+  margin: 0;
+  display: grid;
+  grid-template-columns: 40% 40%;
+  grid-column-gap: 50px;
+  grid-row-gap: 50px;
+  justify-content: center;
+}
+
+h3{
+  color: rgb(30, 30, 30);
+}
+
+.album{
+  border: 2px solid grey;
+  background-color: rgba(255, 255, 255, 0.7);
+  height: auto;
+  display: grid;
+  padding: 10px;
+
+}
+
+
+.song{
+  display: grid;
+  justify-content: center;
+  justify-self: center;
+  justify-items: center;
+  font-size: 25px;
+   
+}
+
+.lyrics{
+  display: grid;
+  justify-self: center;
+  padding-bottom: 20px;
+  text-align: center;
+
+}
+
+#enlaces{
+  border: 2px solid grey;
+  background-color: rgba(255, 255, 255, 0.7);
+  width: 85%;
+  height: auto;
+  display: grid;
+  justify-content: center;
+  justify-self: center;
+  justify-items: center;
+
+}
+
+footer{
+  border: 2px solid grey;
+  background-color: rgba(255, 255, 255, 0.3);
+  width: 85%;
+  height: auto;
+  display: grid;
+  justify-content: center;
+  justify-self: center;
+  justify-items: center;
+}
+
+a:link{
+    color: black;
+  text-decoration: none;}
+  
+  a:visited{
+    color: black;
+  }
+  
+  a:hover{
+    font-size: 1.1em;
+  }
+  

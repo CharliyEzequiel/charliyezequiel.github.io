@@ -1,0 +1,963 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Alta empleado</title>
+    <link rel="stylesheet" href="styles/generales.css" />
+    <link rel="stylesheet" href="styles/alta-empleado.css" />
+  </head>
+  <body>
+    <header>
+      <a href="index.html"
+        ><img src="img/logo-blanco.png" alt="Logotipo Grupo Maia" width="80px"
+      /></a>
+      <div>
+        <p>
+          Hola, <i class="pendiente">Emma Dariela García Lorca</i>. ¿Qué vamos a
+          hacer hoy?
+        </p>
+      </div>
+      <div>
+        <p>Hoy es: <i class="pendiente">Aquí irá la fecha</i></p>
+      </div>
+
+      <div><a class="nav-link" href="portada.html">Salir</a></div>
+
+      <nav>
+        <a class="nav-link" href="#">Div. arquitectura</a>
+        <a class="nav-link" href="#">Div. ingeniería</a>
+        <a class="nav-link" href="#">Auditoría</a>
+        <a class="nav-link" href="capital-humano.html">Capital humano</a>
+        <a class="nav-link" href="#">Contabilidad</a>
+        <a class="nav-link" href="#">Contratos</a>
+        <a class="nav-link" href="#">Dirección</a>
+        <a class="nav-link" href="#">Finanzas</a>
+        <a class="nav-link" href="#">Recurso legal</a>
+        <a class="nav-link" href="#">Tecnología</a>
+      </nav>
+    </header>
+
+    <main>
+      <div id="botones-acb">
+        <button>ALTA</button><button>CAMBIO</button><button>BAJA</button>
+      </div>
+
+      <section id="consulta">
+        <h2>CONSULTA</h2>
+        <h3>INFORMACIÓN PERSONAL</h3>
+        <form id="datos-alta">
+          <span
+            >NO. EMPLEADO
+            <input class="celda" type="text" value="738" readonly />
+          </span>
+
+          <span
+            >NOMBRE
+            <input class="celda" type="text" required />
+          </span>
+
+          <span
+            >PRIMER APELLIDO
+            <input class="celda" type="text" required />
+          </span>
+          <span
+            >SEGUNDO APELLIDO
+            <input class="celda" type="text" required />
+          </span>
+          <span
+            >FECHA DE NACIMIENTO
+            <input class="celda" type="text" required />
+          </span>
+
+          <span
+            >ESTADO CIVIL
+            <input class="celda" type="text" required />
+          </span>
+
+          <span
+            >EDAD
+            <input class="celda" type="text" required />
+          </span>
+
+          <span
+            >CORREO PERSONAL
+            <input class="celda" type="text" required />
+          </span>
+
+          <span
+            >SALUD
+            <input class="celda" type="text" required />
+          </span>
+
+          <span
+            >ÚLTIMO NIVEL ESTUDIOS
+            <input class="celda" type="text" required />
+          </span>
+
+          <span
+            >ESCUELA
+            <input class="celda" type="text" required />
+          </span>
+          <span
+            >SEMESTRE
+            <input class="celda" type="text" required />
+          </span>
+          <span
+            >NIVEL INGLÉS
+            <input class="celda" type="text" required />
+          </span>
+          <span
+            >CARRERA
+            <input type="text" class="celda" required />
+          </span>
+          <span
+            >ESPECIALIDAD
+            <input type="text" class="celda" required />
+          </span>
+          <span
+            >CIUDAD DOMICILIO
+            <input type="text" class="celda" required />
+          </span>
+          <span
+            >COLONIA
+            <input type="text" class="celda" required />
+          </span>
+          <span
+            >HIJOS
+            <input type="text" class="celda" required />
+          </span>
+          <span
+            >DISPONIBLE VIAJAR
+            <input type="text" class="celda" required />
+          </span>
+        </form>
+        <br />
+        <h3>INFORMACIÓN LABORAL</h3>
+
+        <form id="datos-alta">
+          <span
+            >FECHA INGRESO
+            <input class="celda" type="text" required />
+          </span>
+          <span
+            >ANTIGUEDAD
+            <input class="celda" type="text" required />
+          </span>
+          <span
+            >JORNADA
+            <input class="celda" type="text" value="LUN VIE" readonly />
+          </span>
+          <span
+            >PUESTO
+            <select class="celda">
+              <option>Seleccionar...</option>
+              <option value="ANLST">ANLST</option>
+              <option value="COORD">COORD</option>
+              <option value="GRNTE">GRNTE</option>
+              <option value="DIREC">DIREC</option>
+            </select>
+          </span>
+          <span
+            >SUBDEPARTAMENTO
+            <select class="celda">
+              <option>Seleccionar...</option>
+              <option disabled>AUDITORÍA</option>
+              <option>AUDIT ADMN</option>
+              <option>AUDIT PROY</option>
+              <option>ANLIS COST</option>
+              <option disabled>CPTAL HUMANO</option>
+              <option>NÓMINAS</option>
+              <option>RECLTMTO</option>
+              <option>RELACIONES</option>
+              <option disabled>CONTABILIDAD</option>
+              <option>CONTA</option>
+              <option>INVERS</option>
+              <option disabled>CONTRATOS</option>
+              <option>COLECTIVOS</option>
+              <option>EXTERNOS</option>
+              <option disabled>DIV ARQUIT</option>
+              <option>ARQUITECT</option>
+              <option>RENDER</option>
+              <option disabled>DIV INGENRIA</option>
+              <option>ESTRUCTURA</option>
+              <option>INST CAMPO</option>
+              <option>MATERIALES</option>
+              <option disabled>DIRECCIÓN</option>
+              <option>ADMINCIÓN</option>
+              <option>CONTROL</option>
+              <option>SOLUCIONES</option>
+              <option disabled>FINANZAS</option>
+              <option>COMPRAS</option>
+              <option>CRÉDITOS</option>
+              <option>FACTURAS</option>
+              <option disabled>RCRSO LEGAL</option>
+              <option>REPR LEGAL</option>
+              <option disabled>TECNOLOGÍA</option>
+              <option>EQUIPOS</option>
+              <option>SOFTWARE</option>
+            </select>
+          </span>
+          <span
+            >DEPARTAMENTO
+            <input
+              class="celda"
+              type="text"
+              placeholder="Debería ser automático"
+              readonly
+            />
+          </span>
+          <span
+            >LÍDER DE DEPARTAMENTO
+            <input
+              class="celda"
+              type="text"
+              placeholder="Debería ser automático"
+              readonly
+            />
+          </span>
+          <span
+            >CORREO INSTITUCIONAL
+            <input class="celda" type="text" required />
+          </span>
+          <span
+            >PRESTACIONES MAIA
+            <input class="celda" type="text" required />
+          </span>
+          <span
+            >SUELDO MENSUAL
+            <input class="celda" type="text" required />
+          </span>
+          <span
+            >SUELDO QUINCENAL
+            <input class="celda" type="text" required />
+          </span>
+          <span
+            >SUELDO DIARIO
+            <input class="celda" type="text" required />
+          </span>
+          <span
+            >SUELDO POR HORA
+            <input class="celda" type="text" required />
+          </span>
+          <span
+            >SALARIO DIARIO INTEGRADO
+            <input class="celda" type="text" required />
+          </span>
+          <span
+            >PRIMA VACACIONAL
+            <input class="celda" type="text" required />
+          </span>
+          <span
+            >DÍAS DE PRIMA VACACIONAL
+            <input class="celda" type="text" required />
+          </span>
+          <span
+            >DÍAS VACACIONES POR AÑO
+            <input class="celda" type="text" required />
+          </span>
+          <span
+            >DÍAS VACACIONES DISPONIBLES
+            <input class="celda" type="text" required />
+          </span>
+          <span
+            >EFF PRIMA VACACIONAL
+            <input class="celda" type="text" required />
+          </span>
+        </form>
+
+        <div>
+          <button class="aceptar">ACEPTAR</button>
+          <button class="cancelar">CANCELAR</button>
+        </div>
+      </section>
+
+      <section id="alta">
+        <h2>ALTA EMPLEADO</h2>
+        <h3>INFORMACIÓN PERSONAL</h3>
+        <form id="datos-alta">
+          <span
+            >NO. EMPLEADO
+            <input class="celda" type="text" value="738" readonly />
+          </span>
+
+          <span
+            >NOMBRE
+            <input class="celda" type="text" required />
+          </span>
+
+          <span
+            >PRIMER APELLIDO
+            <input class="celda" type="text" required />
+          </span>
+          <span
+            >SEGUNDO APELLIDO
+            <input class="celda" type="text" required />
+          </span>
+          <span
+            >FECHA DE NACIMIENTO
+            <input class="celda" type="text" required />
+          </span>
+
+          <span
+            >ESTADO CIVIL
+            <input class="celda" type="text" required />
+          </span>
+
+          <span
+            >EDAD
+            <input class="celda" type="text" required />
+          </span>
+
+          <span
+            >CORREO PERSONAL
+            <input class="celda" type="text" required />
+          </span>
+
+          <span
+            >SALUD
+            <input class="celda" type="text" required />
+          </span>
+
+          <span
+            >ÚLTIMO NIVEL ESTUDIOS
+            <input class="celda" type="text" required />
+          </span>
+
+          <span
+            >ESCUELA
+            <input class="celda" type="text" required />
+          </span>
+          <span
+            >SEMESTRE
+            <input class="celda" type="text" required />
+          </span>
+          <span
+            >NIVEL INGLÉS
+            <input class="celda" type="text" required />
+          </span>
+          <span
+            >CARRERA
+            <input type="text" class="celda" required />
+          </span>
+          <span
+            >ESPECIALIDAD
+            <input type="text" class="celda" required />
+          </span>
+          <span
+            >CIUDAD DOMICILIO
+            <input type="text" class="celda" required />
+          </span>
+          <span
+            >COLONIA
+            <input type="text" class="celda" required />
+          </span>
+          <span
+            >HIJOS
+            <input type="text" class="celda" required />
+          </span>
+          <span
+            >DISPONIBLE VIAJAR
+            <input type="text" class="celda" required />
+          </span>
+        </form>
+        <br />
+        <h3>INFORMACIÓN LABORAL</h3>
+
+        <form id="datos-alta">
+          <span
+            >FECHA INGRESO
+            <input class="celda" type="text" required />
+          </span>
+          <span
+            >ANTIGUEDAD
+            <input class="celda" type="text" required />
+          </span>
+          <span
+            >JORNADA
+            <input class="celda" type="text" value="LUN VIE" readonly />
+          </span>
+          <span
+            >PUESTO
+            <select class="celda">
+              <option>Seleccionar...</option>
+              <option value="ANLST">ANLST</option>
+              <option value="COORD">COORD</option>
+              <option value="GRNTE">GRNTE</option>
+              <option value="DIREC">DIREC</option>
+            </select>
+          </span>
+          <span
+            >SUBDEPARTAMENTO
+            <select class="celda">
+              <option>Seleccionar...</option>
+              <option disabled>AUDITORÍA</option>
+              <option>AUDIT ADMN</option>
+              <option>AUDIT PROY</option>
+              <option>ANLIS COST</option>
+              <option disabled>CPTAL HUMANO</option>
+              <option>NÓMINAS</option>
+              <option>RECLTMTO</option>
+              <option>RELACIONES</option>
+              <option disabled>CONTABILIDAD</option>
+              <option>CONTA</option>
+              <option>INVERS</option>
+              <option disabled>CONTRATOS</option>
+              <option>COLECTIVOS</option>
+              <option>EXTERNOS</option>
+              <option disabled>DIV ARQUIT</option>
+              <option>ARQUITECT</option>
+              <option>RENDER</option>
+              <option disabled>DIV INGENRIA</option>
+              <option>ESTRUCTURA</option>
+              <option>INST CAMPO</option>
+              <option>MATERIALES</option>
+              <option disabled>DIRECCIÓN</option>
+              <option>ADMINCIÓN</option>
+              <option>CONTROL</option>
+              <option>SOLUCIONES</option>
+              <option disabled>FINANZAS</option>
+              <option>COMPRAS</option>
+              <option>CRÉDITOS</option>
+              <option>FACTURAS</option>
+              <option disabled>RCRSO LEGAL</option>
+              <option>REPR LEGAL</option>
+              <option disabled>TECNOLOGÍA</option>
+              <option>EQUIPOS</option>
+              <option>SOFTWARE</option>
+            </select>
+          </span>
+          <span
+            >DEPARTAMENTO
+            <input
+              class="celda"
+              type="text"
+              placeholder="Debería ser automático"
+              readonly
+            />
+          </span>
+          <span
+            >LÍDER DE DEPARTAMENTO
+            <input
+              class="celda"
+              type="text"
+              placeholder="Debería ser automático"
+              readonly
+            />
+          </span>
+          <span
+            >CORREO INSTITUCIONAL
+            <input class="celda" type="text" required />
+          </span>
+          <span
+            >PRESTACIONES MAIA
+            <input class="celda" type="text" required />
+          </span>
+          <span
+            >SUELDO MENSUAL
+            <input class="celda" type="text" required />
+          </span>
+          <span
+            >SUELDO QUINCENAL
+            <input class="celda" type="text" required />
+          </span>
+          <span
+            >SUELDO DIARIO
+            <input class="celda" type="text" required />
+          </span>
+          <span
+            >SUELDO POR HORA
+            <input class="celda" type="text" required />
+          </span>
+          <span
+            >SALARIO DIARIO INTEGRADO
+            <input class="celda" type="text" required />
+          </span>
+          <span
+            >PRIMA VACACIONAL
+            <input class="celda" type="text" required />
+          </span>
+          <span
+            >DÍAS DE PRIMA VACACIONAL
+            <input class="celda" type="text" required />
+          </span>
+          <span
+            >DÍAS VACACIONES POR AÑO
+            <input class="celda" type="text" required />
+          </span>
+          <span
+            >DÍAS VACACIONES DISPONIBLES
+            <input class="celda" type="text" required />
+          </span>
+          <span
+            >EFF PRIMA VACACIONAL
+            <input class="celda" type="text" required />
+          </span>
+        </form>
+
+        <div>
+          <button class="aceptar">ACEPTAR</button>
+          <button class="cancelar">CANCELAR</button>
+        </div>
+      </section>
+
+      <section id="cambio">
+        <h2>CAMBIOS</h2>
+        <h3>INFORMACIÓN PERSONAL</h3>
+        <form id="datos-alta">
+          <span
+            >NO. EMPLEADO
+            <input class="celda" type="text" value="738" readonly />
+          </span>
+
+          <span
+            >NOMBRE
+            <input class="celda" type="text" required />
+          </span>
+
+          <span
+            >PRIMER APELLIDO
+            <input class="celda" type="text" required />
+          </span>
+          <span
+            >SEGUNDO APELLIDO
+            <input class="celda" type="text" required />
+          </span>
+          <span
+            >FECHA DE NACIMIENTO
+            <input class="celda" type="text" required />
+          </span>
+
+          <span
+            >ESTADO CIVIL
+            <input class="celda" type="text" required />
+          </span>
+
+          <span
+            >EDAD
+            <input class="celda" type="text" required />
+          </span>
+
+          <span
+            >CORREO PERSONAL
+            <input class="celda" type="text" required />
+          </span>
+
+          <span
+            >SALUD
+            <input class="celda" type="text" required />
+          </span>
+
+          <span
+            >ÚLTIMO NIVEL ESTUDIOS
+            <input class="celda" type="text" required />
+          </span>
+
+          <span
+            >ESCUELA
+            <input class="celda" type="text" required />
+          </span>
+          <span
+            >SEMESTRE
+            <input class="celda" type="text" required />
+          </span>
+          <span
+            >NIVEL INGLÉS
+            <input class="celda" type="text" required />
+          </span>
+          <span
+            >CARRERA
+            <input type="text" class="celda" required />
+          </span>
+          <span
+            >ESPECIALIDAD
+            <input type="text" class="celda" required />
+          </span>
+          <span
+            >CIUDAD DOMICILIO
+            <input type="text" class="celda" required />
+          </span>
+          <span
+            >COLONIA
+            <input type="text" class="celda" required />
+          </span>
+          <span
+            >HIJOS
+            <input type="text" class="celda" required />
+          </span>
+          <span
+            >DISPONIBLE VIAJAR
+            <input type="text" class="celda" required />
+          </span>
+        </form>
+        <br />
+        <h3>INFORMACIÓN LABORAL</h3>
+
+        <form id="datos-alta">
+          <span
+            >FECHA INGRESO
+            <input class="celda" type="text" required />
+          </span>
+          <span
+            >ANTIGUEDAD
+            <input class="celda" type="text" required />
+          </span>
+          <span
+            >JORNADA
+            <input class="celda" type="text" value="LUN VIE" readonly />
+          </span>
+          <span
+            >PUESTO
+            <select class="celda">
+              <option>Seleccionar...</option>
+              <option value="ANLST">ANLST</option>
+              <option value="COORD">COORD</option>
+              <option value="GRNTE">GRNTE</option>
+              <option value="DIREC">DIREC</option>
+            </select>
+          </span>
+          <span
+            >SUBDEPARTAMENTO
+            <select class="celda">
+              <option>Seleccionar...</option>
+              <option disabled>AUDITORÍA</option>
+              <option>AUDIT ADMN</option>
+              <option>AUDIT PROY</option>
+              <option>ANLIS COST</option>
+              <option disabled>CPTAL HUMANO</option>
+              <option>NÓMINAS</option>
+              <option>RECLTMTO</option>
+              <option>RELACIONES</option>
+              <option disabled>CONTABILIDAD</option>
+              <option>CONTA</option>
+              <option>INVERS</option>
+              <option disabled>CONTRATOS</option>
+              <option>COLECTIVOS</option>
+              <option>EXTERNOS</option>
+              <option disabled>DIV ARQUIT</option>
+              <option>ARQUITECT</option>
+              <option>RENDER</option>
+              <option disabled>DIV INGENRIA</option>
+              <option>ESTRUCTURA</option>
+              <option>INST CAMPO</option>
+              <option>MATERIALES</option>
+              <option disabled>DIRECCIÓN</option>
+              <option>ADMINCIÓN</option>
+              <option>CONTROL</option>
+              <option>SOLUCIONES</option>
+              <option disabled>FINANZAS</option>
+              <option>COMPRAS</option>
+              <option>CRÉDITOS</option>
+              <option>FACTURAS</option>
+              <option disabled>RCRSO LEGAL</option>
+              <option>REPR LEGAL</option>
+              <option disabled>TECNOLOGÍA</option>
+              <option>EQUIPOS</option>
+              <option>SOFTWARE</option>
+            </select>
+          </span>
+          <span
+            >DEPARTAMENTO
+            <input
+              class="celda"
+              type="text"
+              placeholder="Debería ser automático"
+              readonly
+            />
+          </span>
+          <span
+            >LÍDER DE DEPARTAMENTO
+            <input
+              class="celda"
+              type="text"
+              placeholder="Debería ser automático"
+              readonly
+            />
+          </span>
+          <span
+            >CORREO INSTITUCIONAL
+            <input class="celda" type="text" required />
+          </span>
+          <span
+            >PRESTACIONES MAIA
+            <input class="celda" type="text" required />
+          </span>
+          <span
+            >SUELDO MENSUAL
+            <input class="celda" type="text" required />
+          </span>
+          <span
+            >SUELDO QUINCENAL
+            <input class="celda" type="text" required />
+          </span>
+          <span
+            >SUELDO DIARIO
+            <input class="celda" type="text" required />
+          </span>
+          <span
+            >SUELDO POR HORA
+            <input class="celda" type="text" required />
+          </span>
+          <span
+            >SALARIO DIARIO INTEGRADO
+            <input class="celda" type="text" required />
+          </span>
+          <span
+            >PRIMA VACACIONAL
+            <input class="celda" type="text" required />
+          </span>
+          <span
+            >DÍAS DE PRIMA VACACIONAL
+            <input class="celda" type="text" required />
+          </span>
+          <span
+            >DÍAS VACACIONES POR AÑO
+            <input class="celda" type="text" required />
+          </span>
+          <span
+            >DÍAS VACACIONES DISPONIBLES
+            <input class="celda" type="text" required />
+          </span>
+          <span
+            >EFF PRIMA VACACIONAL
+            <input class="celda" type="text" required />
+          </span>
+        </form>
+
+        <div>
+          <button class="aceptar">ACEPTAR</button>
+          <button class="cancelar">CANCELAR</button>
+        </div>
+      </section>
+
+      <section id="baja">
+        <h2 id="baja">BAJA</h2>
+        <h3>INFORMACIÓN PERSONAL</h3>
+        <form id="datos-alta">
+          <span
+            >NO. EMPLEADO
+            <input class="celda" type="text" value="738" readonly />
+          </span>
+
+          <span
+            >NOMBRE
+            <input class="celda" type="text" required />
+          </span>
+
+          <span
+            >PRIMER APELLIDO
+            <input class="celda" type="text" required />
+          </span>
+          <span
+            >SEGUNDO APELLIDO
+            <input class="celda" type="text" required />
+          </span>
+          <span
+            >FECHA DE NACIMIENTO
+            <input class="celda" type="text" required />
+          </span>
+
+          <span
+            >ESTADO CIVIL
+            <input class="celda" type="text" required />
+          </span>
+
+          <span
+            >EDAD
+            <input class="celda" type="text" required />
+          </span>
+
+          <span
+            >CORREO PERSONAL
+            <input class="celda" type="text" required />
+          </span>
+
+          <span
+            >SALUD
+            <input class="celda" type="text" required />
+          </span>
+
+          <span
+            >ÚLTIMO NIVEL ESTUDIOS
+            <input class="celda" type="text" required />
+          </span>
+
+          <span
+            >ESCUELA
+            <input class="celda" type="text" required />
+          </span>
+          <span
+            >SEMESTRE
+            <input class="celda" type="text" required />
+          </span>
+          <span
+            >NIVEL INGLÉS
+            <input class="celda" type="text" required />
+          </span>
+          <span
+            >CARRERA
+            <input type="text" class="celda" required />
+          </span>
+          <span
+            >ESPECIALIDAD
+            <input type="text" class="celda" required />
+          </span>
+          <span
+            >CIUDAD DOMICILIO
+            <input type="text" class="celda" required />
+          </span>
+          <span
+            >COLONIA
+            <input type="text" class="celda" required />
+          </span>
+          <span
+            >HIJOS
+            <input type="text" class="celda" required />
+          </span>
+          <span
+            >DISPONIBLE VIAJAR
+            <input type="text" class="celda" required />
+          </span>
+        </form>
+        <br />
+        <h3>INFORMACIÓN LABORAL</h3>
+
+        <form id="datos-alta">
+          <span
+            >FECHA INGRESO
+            <input class="celda" type="text" required />
+          </span>
+          <span
+            >ANTIGUEDAD
+            <input class="celda" type="text" required />
+          </span>
+          <span
+            >JORNADA
+            <input class="celda" type="text" value="LUN VIE" readonly />
+          </span>
+          <span
+            >PUESTO
+            <select class="celda">
+              <option>Seleccionar...</option>
+              <option value="ANLST">ANLST</option>
+              <option value="COORD">COORD</option>
+              <option value="GRNTE">GRNTE</option>
+              <option value="DIREC">DIREC</option>
+            </select>
+          </span>
+          <span
+            >SUBDEPARTAMENTO
+            <select class="celda">
+              <option>Seleccionar...</option>
+              <option disabled>AUDITORÍA</option>
+              <option>AUDIT ADMN</option>
+              <option>AUDIT PROY</option>
+              <option>ANLIS COST</option>
+              <option disabled>CPTAL HUMANO</option>
+              <option>NÓMINAS</option>
+              <option>RECLTMTO</option>
+              <option>RELACIONES</option>
+              <option disabled>CONTABILIDAD</option>
+              <option>CONTA</option>
+              <option>INVERS</option>
+              <option disabled>CONTRATOS</option>
+              <option>COLECTIVOS</option>
+              <option>EXTERNOS</option>
+              <option disabled>DIV ARQUIT</option>
+              <option>ARQUITECT</option>
+              <option>RENDER</option>
+              <option disabled>DIV INGENRIA</option>
+              <option>ESTRUCTURA</option>
+              <option>INST CAMPO</option>
+              <option>MATERIALES</option>
+              <option disabled>DIRECCIÓN</option>
+              <option>ADMINCIÓN</option>
+              <option>CONTROL</option>
+              <option>SOLUCIONES</option>
+              <option disabled>FINANZAS</option>
+              <option>COMPRAS</option>
+              <option>CRÉDITOS</option>
+              <option>FACTURAS</option>
+              <option disabled>RCRSO LEGAL</option>
+              <option>REPR LEGAL</option>
+              <option disabled>TECNOLOGÍA</option>
+              <option>EQUIPOS</option>
+              <option>SOFTWARE</option>
+            </select>
+          </span>
+          <span
+            >DEPARTAMENTO
+            <input
+              class="celda"
+              type="text"
+              placeholder="Debería ser automático"
+              readonly
+            />
+          </span>
+          <span
+            >LÍDER DE DEPARTAMENTO
+            <input
+              class="celda"
+              type="text"
+              placeholder="Debería ser automático"
+              readonly
+            />
+          </span>
+          <span
+            >CORREO INSTITUCIONAL
+            <input class="celda" type="text" required />
+          </span>
+          <span
+            >PRESTACIONES MAIA
+            <input class="celda" type="text" required />
+          </span>
+          <span
+            >SUELDO MENSUAL
+            <input class="celda" type="text" required />
+          </span>
+          <span
+            >SUELDO QUINCENAL
+            <input class="celda" type="text" required />
+          </span>
+          <span
+            >SUELDO DIARIO
+            <input class="celda" type="text" required />
+          </span>
+          <span
+            >SUELDO POR HORA
+            <input class="celda" type="text" required />
+          </span>
+          <span
+            >SALARIO DIARIO INTEGRADO
+            <input class="celda" type="text" required />
+          </span>
+          <span
+            >PRIMA VACACIONAL
+            <input class="celda" type="text" required />
+          </span>
+          <span
+            >DÍAS DE PRIMA VACACIONAL
+            <input class="celda" type="text" required />
+          </span>
+          <span
+            >DÍAS VACACIONES POR AÑO
+            <input class="celda" type="text" required />
+          </span>
+          <span
+            >DÍAS VACACIONES DISPONIBLES
+            <input class="celda" type="text" required />
+          </span>
+          <span
+            >EFF PRIMA VACACIONAL
+            <input class="celda" type="text" required />
+          </span>
+        </form>
+
+        <div>
+          <button class="aceptar">ACEPTAR</button>
+          <button class="cancelar">CANCELAR</button>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
