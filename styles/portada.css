@@ -1,0 +1,89 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: url(https://assets.hongkiat.com/uploads/minimalist-dekstop-wallpapers/non-4k/original/23.jpg?3)
+    fixed center no-repeat;
+  background-size: 100%;
+  font-size: 25px;
+  width: 100vw;
+  height: 100vh;
+  display: grid;
+  grid-template-rows: 95% 5%;
+  font-family: monospace;
+}
+
+#panel {
+  background-color: rgba(0, 0, 0, 0.3);
+  width: 20vw;
+  height: 40vh;
+  display: grid;
+  justify-self: center;
+  justify-content: center;
+  align-self: center;
+  align-items: center;
+  backdrop-filter: blur(3px);
+  border-top-left-radius: 70px;
+  border-end-end-radius: 70px;
+}
+
+#gm-nombre {
+  width: 80%;
+  justify-self: center;
+}
+
+#credenciales {
+  color: white;
+  display: grid;
+  justify-content: center;
+  text-align: center;
+  height: auto;
+  align-self: flex-start;
+}
+
+#usuario {
+  text-align: center;
+  border: 0;
+  font-family: monospace;
+  font-size: 20px;
+}
+
+#contraseña {
+  text-align: center;
+  border: 0;
+  font-family: monospace;
+  font-size: 20px;
+}
+
+button {
+  border: 0;
+  background-color: whitesmoke;
+  width: 5vw;
+  justify-self: center;
+}
+
+#login {
+  width: 10px;
+}
+
+footer {
+  align-self: center;
+  justify-self: center;
+  font-size: 15px;
+  color: white;
+}
+
+.charliy:link {
+  color: white;
+  text-decoration: none;
+}
+
+.charliy:visited {
+  color: white;
+}
+
+.charliy:hover {
+  font-size: 1.1em;
+}
