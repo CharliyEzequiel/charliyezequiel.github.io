@@ -10,13 +10,6 @@ body {
   width: 100%;
 }
 
-h1 {
-  font-size: 40px;
-}
-h2 {
-  color: white;
-}
-
 nav {
   overflow: hidden;
   background-color: rgb(6, 26, 64);
@@ -26,31 +19,56 @@ nav {
   top: 0;
   right: 0;
   width: 50%;
+  min-width: 300px;
   display: flex;
   justify-content: space-around;
   border-radius: 10px;
   align-items: center;
 }
 
-#presentacion {
+#fondo-presentacion {
+  background: url("https://wallpapercave.com/wp/wp6940975.jpg") center fixed
+    no-repeat;
+  background-image: 100px;
   height: 90%;
   width: 100%;
-  background-color: white;
-  display: grid;
-  color: rgb(6, 26, 64);
-  font-family: "Edu VIC WA NT Beginner", cursive;
-  font-size: 50px;
+  display: flex;
+  flex-direction: row;
   justify-content: center;
+  align-items: center;
+}
+
+#presentacion {
+  background-color: rgba(255, 255, 255, 0.1);
+  height: 70%;
+  width: 80%;
+  display: grid;
+  color: white;
+  font-size: 40px;
   border-top-left-radius: 100px;
   border-bottom-right-radius: 150px;
   align-items: center;
   font-weight: 700;
   border: 2px solid grey;
+  backdrop-filter: blur(2px);
+  padding: 100px;
 }
 
 .hola {
   font-weight: 200%;
   font-size: 200%;
+  font-family: "VT323", monospace;
+  position: relative;
+  left: 200px;
+}
+
+#desc-icon {
+  display: grid;
+  grid-template-columns: 95% 5%;
+}
+
+.icon-redes {
+  width: 40px;
 }
 
 main {
@@ -94,4 +112,11 @@ a:visited {
 a:hover {
   font-size: 1.1em;
   text-decoration: none;
+}
+
+h1 {
+  font-size: 40px;
+}
+h2 {
+  color: white;
 }
