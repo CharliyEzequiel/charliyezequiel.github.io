@@ -15,34 +15,35 @@
     <link rel="stylesheet" href="styles/index.css" />
     <link rel="stylesheet" href="styles/galeria.css" />
     <!-- Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=VT323&display=swap"
-      rel="stylesheet"
-    />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oxanium:wght@500&display=swap" rel="stylesheet">
     <!-- Fonts -->
   </head>
   <body>
+    <!-- nav -->
     <nav>
-      <div>Perfil</div>
-      <div>Grupo Maia</div>
-      <div>Proyectos laborales</div>
-      <div>Pasatiempos</div>
+      <div> <a href="#fondo-presentacion" class="a-blanca"> Perfil</a></div>
+      <div> <a
+              href="otros/cv-web.pdf"
+              download="Carlos Ponce"
+            class="a-blanca"> CV</a></div>
+      <div><a href="#galeria-gm" class="a-blanca">Proyectos</a></div>
+      <div><a href="#galeria-hobbies" class="a-blanca">Acerca de mí</a></div>
     </nav>
-
+    <!-- Presentación -->
     <div id="fondo-presentacion">
       <section id="presentacion">
-        <span class="hola">Hola, soy Charliy Ezequiel</span>
+        <span class="hola">CHARLIY EZEQUIEL</span>
         <br />
         <div id="desc-icon">
           <span
             >Lic. administrador en progreso<br />
-            Entuciasta de la informática<br />
+            Entusiasta de la informática<br />
             Autodidacta<br
           /></span>
 
-          <span>
+          <span id="icons">
             <a href="https://github.com/CharliyEzequiel" target="_blank"
               ><img src="img/github.png" class="icon-redes"
             /></a>
@@ -65,25 +66,34 @@
       <br />
     </div>
     <main>
+      <!-- Titular de ejemplos -->
       <h2>
+        <a href="#section-gm" class="href-mismo-sitio">
+          <img
+            src="img/down.jpg"
+            alt="Ícono flecha hacia abajo"
+            style="height: 15px"
+          />
+        </a>
         Aquí están algunos ejemplos de los proyectos en los que he trabajado:
       </h2>
-      <br />
-      <br />
 
+      <!-- Primer galería (gm) -->
       <section class="galeria" id="galeria-gm">
-        <h1>Grupo Maia</h1>
+        <h1 id="section-gm">Grupo Maia</h1>
         <p>
           GM se creó como un proyecto final académico. Es empresa de
           construcción, situada en Monterrey, N.L. <br />
           Todos los datos personales mostrados son ficticios. El documento
-          original (.xlsm) se puede descargar dando
-          <a
-            href="otros/departamento-de-capital-humano.xlsm"
-            download="Departamento de Capital Humano"
+          original, Excel con macros (.xlsm) se puede descargar dando
+          <i
+            ><a
+              href="otros/departamento-de-capital-humano.xlsm"
+              download="Departamento de Capital Humano"
+            >
+              clic aquí
+            </a></i
           >
-            clic aquí
-          </a>
         </p>
         <br />
         <!-- La mayor parte de este código está tomado de: https://www.w3schools.com/howto/howto_js_slideshow.asp ... Créditos al autor -->
@@ -97,7 +107,7 @@
           </div>
 
           <div class="mySlides fade">
-            <img src="img/ev/Extendido.png" style="width: 100%" />
+            <img src="img/ev/Extendido.png" class="img-ev" />
             <div class="text">
               Se obtienen los datos del empleado con sólo ingresar su Número de
               empleado.
@@ -192,6 +202,143 @@
         </div>
         <br />
       </section>
+      <!-- Segunda galería (Brands) -->
+      <section class="galeria" id="galeria-brands">
+        <h1>Brand's Etc.</h1>
+        <p>
+          El concentrado de ventas que creé en 2019 para el punto en el que
+          laboraba. Fue una inciativa para digitalizar el registro de ventas que
+          hasta el momento se llevaba en papel, y tener una visualización del
+          progreso mensual.
+          <br />
+          El documento original, Excel (.xlsx) se puede descargar dando
+          <i>
+            <a
+              href="otros/concentrado-ventas.xlsx"
+              download="Concentrado de ventas Brands"
+            >
+              clic aquí
+            </a></i
+          >
+        </p>
+        <br />
+        <div class="slideshow-container">
+          <img src="img/ev/Brands.png" class="img-otros" />
+          <div class="text">
+            Se registra la cantidad diaria de ventas en la isla. Eramos dos
+            colaboradores y la líder de zona.
+          </div>
+        </div>
+        <br />
+        <div class="slideshow-container">
+          <img src="img/ev/Brands resumen oct.png" class="img-otros" />
+          <div class="text">
+            Gráfica del progreso mensual con fechas. Montos acumulados en la
+            primer imagen y monto diario en la segunda.
+          </div>
+        </div>
+      </section>
+      <!-- Tercera galería (Otros) -->
+      <section class="galeria" id="galeria-otros">
+        <h1>Otros proyectos</h1>
+        <p>
+          Ejercicios independientes para sólo practicar.
+          <br />
+          Los documentos originales, Excel (.xlsm) se puede descargar dando
+          <br />
+          Calendario:
+          <i>
+            <a
+              href="otros/calenadario-macros.xlsm"
+              download="Concentrado de ventas Brands"
+            >
+              clic aquí
+            </a></i
+          >
+        </p>
+        <br />
+        <div class="slideshow-container">
+          <img src="img/ev/calendario.png" class="img-otros" />
+          <div class="text">
+            Calendario dinámico que muestra en pantalla sólo los días del mes seleccionado en la lista izquierda. Originalmente pensado para integrarse en el doc Dpto Capital humano.
+          </div>
+        </div>
+        <br />
+        <p>
+        Contabilidad financiera:
+        <i>
+          <a
+            href="otros/Contabilidad-financiera.xlsm"
+            download="Concentrado de ventas Brands"
+          >
+            clic aquí
+          </a></i
+        >
+          <br>
+          <br>
+        <div class="slideshow-container">
+          <img src="img/ev/balanza conta.png" class="img-otros" />
+          <div class="text">
+            Ejercicio que hice para primer semestre, en clase de contabilidad financiera (2018), donde se llenaban en automático cada celda de las columnas con la información vaciada en las primeras dos hojas.
+          </div>
+        </div>
+        </p>
+      </section>
+      <!-- Cuarta galeria (Fotografía y hobbies) -->
+      <section class="galeria" id="galeria-hobbies">
+          <h1>Mis pasatiempos</h1>
+          <p>No soy fotógrafo, pero aquí algunas de las mejores capturas que he tomado.</p>
+          <br />
+        <article class="galeria-fotos">
+          <div>
+            <img src="img/ev/kfc.jpg" class="img-hobbies" />
+          </div>
+          <div></div>
+          <div>
+            <img src="img/ev/metro.jpg" class="img-hobbies" />
+          </div>
+          <div></div>
+          <div>
+            <img src="img/ev/sol.jpg" class="img-hobbies" />
+          </div>
+          
+          <div>
+            <img src="img/ev/torre.jpg" class="img-hobbies" />
+          </div>
+          <div></div>
+          <div>
+            <img src="img/ev/camion.jpg" class="img-hobbies" />
+          </div>
+          <div></div>
+          <div>
+            <img src="img/ev/cerro.jpg" class="img-hobbies" />
+          </div>
+        </article>
+        <article class="galeria-hobbies">
+          <div>
+            <p class="centrar-hobbies">A veces hago videos para YouTube.</p>
+            <br />
+            <a href="https://www.youtube.com/user/CHARLIY1998" target="_blank"
+              ><img src="img/ev/youtube.png" class="img-hobbies"/></a>
+          </div>
+          <div></div>
+          <div>
+            <p class="centrar-hobbies">A veces practico senderismo en las montañas del estado</p>
+            <br />
+            <img src="img/ev/senderismo.jpg" class="img-hobbies" />
+          </div>
+        </article>
+      </section>
+
+      <footer>
+
+        <span>"Porque sólo aceptando lo que somos, obtendremos lo que queremos. <br>
+          - Lord Petyr Baelish, <i>Juego de Tronos</i>  
+        </span>
+        <span>Charliy Ezequiel // jul 2022</span>
+      </footer>
+
+      
     </main>
     <script src="js/index.js"></script>
   </body>
