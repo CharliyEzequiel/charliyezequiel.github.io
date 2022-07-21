@@ -4,32 +4,33 @@
 }
 
 body {
-  background-color: rgb(6, 26, 64);
+  background-color: rgb(2, 16, 41);
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   height: 100vh;
   width: 100%;
 }
 
 nav {
-  overflow: hidden;
-  background-color: rgb(6, 26, 64);
+  overflow: auto;
+  background-color: rgb(2, 16, 41);
   height: 40px;
   color: white;
   position: fixed;
   top: 0;
   right: 0;
   width: 50%;
-  min-width: 300px;
+  min-width: 200px;
   display: flex;
   justify-content: space-around;
   border-radius: 10px;
   align-items: center;
+  z-index: 100;
 }
 
 #fondo-presentacion {
   background: url("https://wallpapercave.com/wp/wp6940975.jpg") center fixed
     no-repeat;
-  background-image: 100px;
+  background-size: 100%;
   height: 90%;
   width: 100%;
   display: flex;
@@ -43,23 +44,24 @@ nav {
   height: 70%;
   width: 80%;
   display: grid;
+  font-family: "Oxanium", cursive;
   color: white;
-  font-size: 40px;
+  font-size: 30px;
   border-top-left-radius: 100px;
   border-bottom-right-radius: 150px;
   align-items: center;
   font-weight: 700;
   border: 2px solid grey;
-  backdrop-filter: blur(2px);
+  backdrop-filter: blur(3px);
   padding: 100px;
 }
 
 .hola {
   font-weight: 200%;
   font-size: 200%;
-  font-family: "VT323", monospace;
+
   position: relative;
-  left: 200px;
+  left: 5%;
 }
 
 #desc-icon {
@@ -67,18 +69,48 @@ nav {
   grid-template-columns: 95% 5%;
 }
 
+/*
+#icons {
+  background-color: grey;
+  border-bottom-right-radius: 20px;
+  border-top-left-radius: 20px;
+  display: grid;
+  justify-content: center;
+  align-self: center;
+}
+*/
+
 .icon-redes {
-  width: 40px;
+  width: 45px;
 }
 
 main {
   margin-left: 20px;
+  padding: 10px;
 }
 .galeria {
   padding: 10px;
   margin: 10px;
-  border: 1px solid silver;
+  border: 2px solid silver;
   background-color: white;
+  border-top-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+}
+
+.galeria-fotos {
+  padding: 10px;
+  margin: 10px;
+  background-color: white;
+  display: grid;
+  grid-template-columns: 30% 5% 30% 5% 30%;
+}
+
+.galeria-hobbies {
+  padding: 10px;
+  margin: 10px;
+  background-color: white;
+  display: grid;
+  grid-template-columns: 50% 5px 50%;
 }
 
 figure {
@@ -87,8 +119,31 @@ figure {
 }
 
 img {
+  width: auto;
+  max-width: 90vw;
+  max-height: 90vh;
+}
+
+.img-otros {
+  width: 90%;
+  max-height: 50%;
+}
+
+.img-hobbies {
   width: 100%;
-  max-height: 7 "" px;
+}
+
+.centrar-hobbies {
+  display: grid;
+  justify-content: center;
+}
+
+footer {
+  color: #fff;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  justify-items: center;
+  font-family: "Times New Roman", Times, serif;
 }
 
 .pendiente {
@@ -114,9 +169,25 @@ a:hover {
   text-decoration: none;
 }
 
+.a-blanca:link {
+  color: white;
+  text-decoration: none;
+}
+
+.a-blanca:visited {
+  color: white;
+  text-decoration: none;
+}
+
+.a-blanca:hover {
+  font-size: 1.1em;
+  text-decoration: none;
+}
+
 h1 {
   font-size: 40px;
 }
 h2 {
   color: white;
+  padding: 10px;
 }
