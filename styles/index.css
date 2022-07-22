@@ -7,7 +7,10 @@ body {
   background-color: rgb(2, 16, 41);
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   height: 100vh;
-  width: 100%;
+  width: 99vw;
+
+  scrollbar-base-color: red;
+  scrollbar-color: red;
 }
 
 nav {
@@ -31,7 +34,7 @@ nav {
   background: url("https://wallpapercave.com/wp/wp6940975.jpg") center fixed
     no-repeat;
   background-size: 100%;
-  height: 90%;
+  height: 100vh;
   width: 100%;
   display: flex;
   flex-direction: row;
@@ -69,23 +72,11 @@ nav {
   grid-template-columns: 95% 5%;
 }
 
-/*
-#icons {
-  background-color: grey;
-  border-bottom-right-radius: 20px;
-  border-top-left-radius: 20px;
-  display: grid;
-  justify-content: center;
-  align-self: center;
-}
-*/
-
 .icon-redes {
-  width: 45px;
+  width: 80%;
 }
 
 main {
-  margin-left: 20px;
   padding: 10px;
 }
 .galeria {
@@ -131,6 +122,7 @@ img {
 
 .img-hobbies {
   width: 100%;
+  margin: 0;
 }
 
 .centrar-hobbies {
@@ -151,7 +143,7 @@ footer {
 }
 
 p {
-  font-size: 25px;
+  font-size: 20px;
 }
 
 a:link {
@@ -190,4 +182,80 @@ h1 {
 h2 {
   color: white;
   padding: 10px;
+}
+
+@media screen and (max-width: 80px) {
+  nav {
+    width: 100%;
+  }
+
+  p {
+    font-size: 15px;
+  }
+
+  #fondo-presentacion {
+    background-size: 500%;
+  }
+
+  #presentacion {
+    font-size: 20px;
+    justify-content: start;
+    text-align: start;
+    padding: 10px;
+  }
+
+  #desc-icon {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+
+  .icon-redes {
+    width: 40px;
+  }
+
+  .galeria {
+    padding: 0;
+    margin: 5px;
+  }
+
+  .galeria-fotos {
+    display: grid;
+    grid-template-columns: 100%;
+  }
+
+  .galeria-hobbies {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+  }
+
+  footer {
+    font-size: 10px;
+  }
+
+  .img-otros {
+    width: 100vw;
+  }
+  .img-hobbies {
+    width: 100vw;
+  }
+
+  .text {
+    display: none;
+  }
+
+  main {
+    margin: 0;
+    padding: 0;
+  }
+}
+
+body::-webkit-scrollbar {
+  width: 5px;
+}
+
+body::-webkit-scrollbar-thumb {
+  background: grey;
+  border-radius: 10px;
 }
