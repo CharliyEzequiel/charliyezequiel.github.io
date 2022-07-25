@@ -193,6 +193,11 @@ h2 {
     font-size: 15px;
   }
 
+  h1{
+  padding-top: 20px;
+  }
+    
+    
   #fondo-presentacion {
     background-size: 500%;
   }
