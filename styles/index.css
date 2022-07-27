@@ -31,7 +31,7 @@ nav {
 }
 
 #fondo-presentacion {
-  background: url("https://wallpapercave.com/wp/wp6940975.jpg") center fixed
+  background: url("https://wallpapercave.com/wp/wp2026359.jpg") center fixed
     no-repeat;
   background-size: 100%;
   height: 100vh;
@@ -43,7 +43,7 @@ nav {
 }
 
 #presentacion {
-  background-color: rgba(255, 255, 255, 0.1);
+  background-color: rgba(0, 0, 0, 0.2);
   height: 70%;
   width: 80%;
   display: grid;
