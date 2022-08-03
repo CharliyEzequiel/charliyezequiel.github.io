@@ -7,6 +7,13 @@ body {
   background-color: black;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   height: 100vh;
+  background-color: #000000;
+  opacity: 1;
+  background: linear-gradient(135deg, #0c0c0c55 25%, transparent 25%) -20px 0/
+      40px 40px,
+    linear-gradient(225deg, #0c0c0c 25%, transparent 25%) -20px 0/ 40px 40px,
+    linear-gradient(315deg, #0c0c0c55 25%, transparent 25%) 0px 0/ 40px 40px,
+    linear-gradient(45deg, #0c0c0c 25%, #000000 25%) 0px 0/ 40px 40px;
 }
 
 nav {
@@ -178,6 +185,16 @@ h2 {
   * {
     margin: 0;
     padding: 0;
+  }
+
+  body {
+    background-color: #000000;
+    opacity: 1;
+    background: linear-gradient(135deg, #27272755 25%, transparent 25%) -20px 0/
+        40px 40px,
+      linear-gradient(225deg, #272727 25%, transparent 25%) -20px 0/ 40px 40px,
+      linear-gradient(315deg, #27272755 25%, transparent 25%) 0px 0/ 40px 40px,
+      linear-gradient(45deg, #272727 25%, #000000 25%) 0px 0/ 40px 40px;
   }
 
   nav {
