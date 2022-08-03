@@ -291,6 +291,6 @@ body::-webkit-scrollbar {
   background-color: black;
 }
 m body::-webkit-scrollbar-thumb {
-  background: grey;
+  background: white;
   border-radius: 10px;
 }
