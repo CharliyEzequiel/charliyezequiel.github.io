@@ -4,25 +4,19 @@
 }
 
 body {
-  background-color: rgb(2, 16, 41);
+  background-color: black;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   height: 100vh;
-  width: 99vw;
-
-  scrollbar-base-color: red;
-  scrollbar-color: red;
 }
 
 nav {
-  overflow: auto;
-  background-color: rgb(2, 16, 41);
+  background-color: rgb(31, 39, 49);
   height: 40px;
   color: white;
   position: fixed;
   top: 0;
   right: 0;
   width: 50%;
-  min-width: 200px;
   display: flex;
   justify-content: space-around;
   border-radius: 10px;
@@ -31,8 +25,8 @@ nav {
 }
 
 #fondo-presentacion {
-  background: url("https://wallpapercave.com/wp/wp2026359.jpg") center fixed
-    no-repeat;
+  background: url("https://bn1304files.storage.live.com/y4mGOjIqg72aLodTLnOuR-fH0eMU0eWeN5b8r6fAI1EKP2lx0rrd9ogsSkkmBrCK7-8QhLZDBkULXFi67QH47YfeJOZKYLP60ppoMClgEP3CvKPnBlsSezU6YQ21-dDE73QxAWdDyDAoq2-kX3WzuAbcOiuEBv2bHpkOIsiT5nPUmeBA4kttrOQfW6dwgFmbSWw?width=2592&height=1456&cropmode=none")
+    center fixed no-repeat;
   background-size: 100%;
   height: 100vh;
   width: 100%;
@@ -43,7 +37,7 @@ nav {
 }
 
 #presentacion {
-  background-color: rgba(0, 0, 0, 0.2);
+  background-color: rgba(0, 0, 0, 0.7);
   height: 70%;
   width: 80%;
   display: grid;
@@ -52,17 +46,16 @@ nav {
   font-size: 30px;
   border-top-left-radius: 100px;
   border-bottom-right-radius: 150px;
-  align-items: center;
+  align-items: space-around;
   font-weight: 700;
-  border: 2px solid grey;
+
   backdrop-filter: blur(3px);
   padding: 100px;
 }
 
 .hola {
   font-weight: 200%;
-  font-size: 200%;
-
+  font-size: 300%;
   position: relative;
   left: 5%;
 }
@@ -76,14 +69,10 @@ nav {
   width: 80%;
 }
 
-main {
-  padding: 10px;
-}
 .galeria {
-  padding: 10px;
-  margin: 10px;
-  border: 2px solid silver;
-  background-color: white;
+  padding: 20px;
+  margin: 50px;
+  background-color: rgba(255, 255, 255, 0.8);
   border-top-left-radius: 30px;
   border-bottom-right-radius: 30px;
 }
@@ -91,7 +80,6 @@ main {
 .galeria-fotos {
   padding: 10px;
   margin: 10px;
-  background-color: white;
   display: grid;
   grid-template-columns: 30% 5% 30% 5% 30%;
 }
@@ -99,7 +87,6 @@ main {
 .galeria-hobbies {
   padding: 10px;
   margin: 10px;
-  background-color: white;
   display: grid;
   grid-template-columns: 50% 5px 50%;
 }
@@ -135,7 +122,7 @@ footer {
   display: grid;
   grid-template-columns: 50% 50%;
   justify-items: center;
-  font-family: "Times New Roman", Times, serif;
+  font-family: monospace;
 }
 
 .pendiente {
@@ -183,36 +170,49 @@ h2 {
   color: white;
   padding: 10px;
 }
+/* ADAPTATIVE RESPONSIVE MEDIA*/
+/* ADAPTATIVE RESPONSIVE MEDIA*/
+/* ADAPTATIVE RESPONSIVE MEDIA*/
 
 @media screen and (max-width: 800px) {
+  * {
+    margin: 0;
+    padding: 0;
+  }
+
   nav {
-    width: 100%;
+    width: 100vw;
+    left: 0;
+  }
+
+  h1 {
+    padding-top: 10px;
+    padding-left: 10px;
   }
 
   p {
     font-size: 15px;
+    padding: 10px;
   }
 
-  h1{
-  padding-top: 20px;
-  }
-    
-    
   #fondo-presentacion {
-    background-size: 500%;
+    background-size: 350%;
+    background-position-x: center;
+    width: 100%;
   }
 
   #presentacion {
     font-size: 20px;
     justify-content: start;
     text-align: start;
-    padding: 10px;
+    padding: 50px;
+    width: 95%;
   }
 
   #desc-icon {
     display: flex;
     flex-wrap: wrap;
-    align-items: center;
+    align-items: start;
   }
 
   .icon-redes {
@@ -254,13 +254,26 @@ h2 {
     margin: 0;
     padding: 0;
   }
+
+  .prev {
+    max-width: 10px;
+  }
+
+  .next {
+    left: 95%;
+    max-width: 10px;
+  }
 }
+
+/* SCROLLBAR CHANGES*/
+/* SCROLLBAR CHANGES*/
+/* SCROLLBAR CHANGES*/
 
 body::-webkit-scrollbar {
   width: 5px;
+  background-color: black;
 }
-
-body::-webkit-scrollbar-thumb {
+m body::-webkit-scrollbar-thumb {
   background: grey;
   border-radius: 10px;
 }
