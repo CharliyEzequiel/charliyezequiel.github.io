@@ -6,8 +6,8 @@
 
 /* Slideshow container */
 .slideshow-container {
-  max-width: 90%;
-  max-height: 50%;
+  max-width: 95%;
+  max-height: 100%;
   position: relative;
   margin: auto;
   display: flex;
@@ -73,7 +73,7 @@
 /* Fading animation */
 .fade {
   animation-name: fade;
-  animation-duration: 0.5s;
+  animation-duration: 1s;
 }
 
 @keyframes fade {
