@@ -24,49 +24,111 @@
   </head>
   <!-- body -->
   <body>
-      <!-- nav -->
+      <!-- nav
       <nav>
         <div> <a href="#fondo-presentacion" class="a-nav"> Inicio</a></div>
-        <div><a href="#galeria-gm" class="a-nav">Proyectos</a></div>
+        <div><a href="#inicio" class="a-nav">Proyectos</a></div>
         <div><a href="#galeria-hobbies" class="a-nav">Acerca de mí</a></div>
       </nav>
+       -->
+
+
       <!-- Presentación -->
-        <div id="fondo-presentacion">
+      <span class="advertencia"> Es necesario ver este sitio en una laptop/pc a pantalla completa. </span>
+        
+      
+      <div id="fondo-presentacion">
           <section id="presentacion">
-            <span class="nombre">CHARLIY EZEQUIEL</span>
+              <div class="container">
+                <div class="Carlos">\\ Carlos Ponce</div>
+                <div class="Charliy">@CharliyEzequiel</div>
+              </div>
             <div id="desc-icon">
               <span
-                >Lic. administrador en progreso // Autodidacta de informática</span>
+                >\\ Lic. administrador en progreso \\ Entuciasta de informática</span>
               <span></span>
-             <!--  <span id="icons">
-                <a href="https://github.com/CharliyEzequiel" target="_blank"
+              <span id="icons">
+              <h1>Contacto:</h1>
+              <!--- <a href="https://github.com/CharliyEzequiel" target="_blank"
                   ><img src="img/github.png" class="icon-redes"
-                /></a>
+                /></a> -->
                 <a
                   href="https://www.linkedin.com/in/carlos-alejandro-ponce/"
                   target="_blank"
                   ><img src="img/linkedin.png" class="icon-redes"
                 /></a>
-                <a href="mailto:charliy98.2@hotmail.com" target="_blank"
+                <a href="mailto:charliy98@hotmail.com" target="_blank"
                   ><img src="img/email.png" class="icon-redes"
                 /></a>
-              </span> -->
+                <a href="https://api.whatsapp.com/send?phone=5218181691863" target="_blank"
+                  ><img src="img/whatsapp.png" class="icon-redes"
+              /></a>
+              <a href="#aboutme" 
+                  ><img src="img/man.png" class="icon-redes"
+              /></a>
+              </span>
             </div>
           </section>
-        <br />
+
     </div>
       <main>
+
+        <span class="aboutme" id="aboutme">
+          <span class="aboutme-titulo">
+            Acerca de mí
+          </span>
+          <div></div><div></div>
+          <span class="aboutme-cuadro">
+            Mi trabajo ha facilitado el análisis de proyectos y acceso a información, teniendo impacto en decisiones comerciales, operativas y administrativas.
+            
+          </span> 
+          <div> </div> <div> </div>
+          <span class="aboutme-cuadro">
+             
+            Mi objetivo es desarrollar mejoras significativas en procesos de administración y sistemas. <br>
+            Aprovechar las herramientas digitales para mejorar la eficiencia del trabajo. <br>
+          </span>
+          <div></div> <div></div>
+          <span class="aboutme-cuadro">
+            Mi meta es ser polímata de la vida: explorar, aprender y generar valor a mi entorno a través de la nuevas perspectivas. <br>  
+            Las finanzas y la tecnología son mis dos pasiones. <br>
+          </span>
+      
+        </span>
+
         <!-- Titular de ejemplos -->
-        <h2>
-          <a href="#galeria-gm" class="href-mismo-sitio">
+        <h2 id="inicio">
+          <a href="#galeria-nyc" class="href-mismo-sitio">
             <img
               src="img/down.jpg"
               alt="Ícono flecha hacia abajo"
               style="height: 15px"
             />
           </a>
-          Aquí están algunos ejemplos de los proyectos en los que he trabajado:
+          Aquí están algunos proyectos desarrollados en Excel:
         </h2>
+
+        <!-- Primer galería (Dashboard) -->
+        <section class="galeria" id="galeria-nyc">
+          <span>
+          <h1>Dashboard</h1>
+          <p>
+            En NYC elaboré un informe diario para las juntas de dirección, donde se tomaban las decición del día. <br>
+            Este reporte lo realicé en Excel, con un query SQL desarrollado por mí. <br> <br> 
+            Obtiene la información de CXC, planeación, producción y almacenes directamente desde la base de datos de SAP Business One cada mañana. <br>
+            Con un apartado para que las personas que no cargan información a sistemas, puedan acceder al archivo y capturar a mano sus resultados (RRHH).
+          </p>
+          </span>
+          <div class="slideshow-container">
+            <img src="img/ev/Dashboard.png" class="img-otros" />
+            <div class="text">
+              Recreación del reporte, con cifras simbólicas.
+            </div>
+          </div>
+          <br />
+
+          <br>
+        </section>
 
         <!-- Primer galería (gm) -->
         <section class="galeria" id="galeria-gm">
@@ -75,7 +137,7 @@
           <p>
             GM se creó como un proyecto final académico. Es una empresa de
             construcción, situada en Monterrey, N.L. <br />
-            Todos los datos personales mostrados son ficticios.<br> El documento
+            Todos los datos personales mostrados son ficticios.<br> <br> El documento
             original, Excel con macros (.xlsm) se puede visualizar o descargar dando
             <i
               ><a
@@ -190,8 +252,13 @@
             <a class="prev" onclick="plusSlides(-1)">-</a>
             <a class="next" onclick="plusSlides(1)">-</a>
           </div>
+
+
           <br />
         </section>
+
+
+
         <!-- Segunda galería (Brands) -->
         <section class="galeria" id="galeria-brands">
           <span>
@@ -199,8 +266,7 @@
           <p>
             El concentrado de resultados que creé en 2019 para el punto de ventas en el que laboraba. <br>
             Fue una inciativa para digitalizar el registro de ventas que             hasta el momento se llevaba en papel, y tener una visualización del
-            progreso mensual.
-            <br>
+            progreso <br> <br>
             El documento original, Excel (.xlsx) se puede visualizar o descargar dando
             <i>
               <a
@@ -229,6 +295,8 @@
           </div>
           <br>
         </section>
+
+
         <!-- Tercera galería (Cursos) -->
         
         <section class="galeria-cursos">
@@ -282,7 +350,7 @@
               <img src="img/ev/cerro.jpg" class="img-hobbies" />
             </div>
           </article>
-          <article class="galeria-hobbies2">
+          <!--- <article class="galeria-hobbies2">
             <div>
               <p class="centrar-hobbies"> Empiezo a hacer videos para YouTube.</p>
               <br />
@@ -294,18 +362,21 @@
               <br />
               <img src="img/ev/senderismo.jpg" class="img-hobbies" />
             </div>
-          </article>
-        </section>
+          </article> -->
+        </section> 
 
         <footer>
           <span>"Porque sólo aceptando lo que somos, obtendremos lo que queremos". <br>
             - Lord Petyr Baelish, <i>Juego de Tronos</i>  
           </span>
-          <span>Realizado por <a href="https://www.linkedin.com/in/carlos-alejandro-ponce/">@CharliyEzequiel,</a> <br>Última actualización: ene 2024</span>
+          <span>Realizado por <a href="https://www.linkedin.com/in/carlos-alejandro-ponce/">@CharliyEzequiel,</a> 
+            <br>Última actualización: octubre 2024</span>
 
 
         </footer>
       </main>
+
+
       <br>
       <br>
       <br>
