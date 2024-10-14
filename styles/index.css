@@ -12,8 +12,10 @@ body {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   color: rgb(255, 255, 255);
   height: 100vh;
+  min-height: 100vh;
   font-weight: 300;
   text-align: justify;
+  overflow-x: hidden; /* Previene desbordes horizontales */
 }
 
 nav {
@@ -44,6 +46,7 @@ nav {
 #presentacion {
   background-color: rgb(22, 28, 34);
   height: 75%;
+  min-height: 600px;
   width: 90%;
   display: grid;
   font-family: "consolas", Tahoma, Geneva, Verdana, sans-serif;
@@ -51,17 +54,19 @@ nav {
   font-size: 40px;
   font-weight: 1500;
   border-bottom-right-radius: 150px;
-  backdrop-filter: blur(1px);
+  backdrop-filter: blur(1px); /* Requiere soporte moderno */
+  -webkit-backdrop-filter: blur(1px); /* Para compatibilidad con navegadores WebKit */
   padding: 20px;
   border: solid rgb(255, 255, 255) 2px;
 }
+
 
 .advertencia {
   color: rgb(31, 39, 49);;
 }
 
 .nombre {
-  font-size: 200%;
+  font-size: 100%;
   display: grid;
   align-items: center;
 }
@@ -78,10 +83,10 @@ nav {
   position: absolute;
   top: 0;
   left: 0;
-  width: 40%;
+  width: 100%;
   height: 100%;
   display: flex;
-  justify-content: left;
+  justify-content: flex-start;
   align-items: center;
   font-size: 24px;
   transition: transform 3s ease;
@@ -90,21 +95,22 @@ nav {
 .Carlos {
   background-color: rgb(22, 28, 34);
   font-size: 70px;
-  z-index: 2; /* Se coloca por encima de Charliy */
+  z-index: 2;
 }
 
 .Charliy {
   background-color: rgb(22, 28, 34);
   font-size: 60px;
-  z-index: 1; /* Está debajo de Carlos */
+  z-index: 1;
 }
-
-
 
 .container:hover .Carlos {
-  transform: translateX(100%); /* Mueve Carlos hacia la derecha */
+  transform: translateX(0%); /* Evita mover Carlos fuera de la vista completa */
 }
 
+#icons {
+  justify-items: auto;
+}
 
 
 #desc-icon {
@@ -112,8 +118,23 @@ nav {
   font-size: auto;
   grid-template-columns: 95% 5%;
   align-items: right;
-  padding-left: 100px;
 }
+
+
+
+.icon-redes {
+  height: 100px;
+  padding: 10px;
+  margin-top: 50px;
+  margin-left: 100px;
+  justify-content: center;
+
+  border-top-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+  border: solid rgba(255, 255, 255, 0.1) 2px;
+}
+
+
 
 .aboutme {
   font-size: 50px;
@@ -131,19 +152,6 @@ nav {
   padding-bottom: 30px;
 }
 
-
-
-.icon-redes {
-  height: 100px;
-  padding: 10px;
-  margin-top: 50px;
-  margin-left: 200px;
-  justify-content: center;
-  grid-template-columns: 30% 70%;
-  border-top-left-radius: 30px;
-  border-bottom-right-radius: 30px;
-  border: solid rgba(255, 255, 255, 0.1) 2px;
-}
 
 
 
@@ -324,7 +332,7 @@ h2 {
 /* ADAPTATIVE RESPONSIVE MEDIA*/
 /* ADAPTATIVE RESPONSIVE MEDIA*/
 
-@media screen and (max-width: 1620px) {
+@media screen and (max-width: 1000px) {
   * {
     margin: 0;
     padding: 0;
@@ -436,3 +444,5 @@ m body::-webkit-scrollbar-thumb {
   background: grey;
   border-radius: 10px;
 }
+
+
