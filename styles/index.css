@@ -1,0 +1,481 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: monospace;
+}
+
+/* color azul chido: rgb(31, 39, 49) */
+
+
+body {
+  background-color: rgb(31, 39, 49);
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: rgb(255, 255, 255);
+  height: 100vh;
+  min-height: 100vh;
+  font-weight: 300;
+  text-align: justify;
+  overflow-x: hidden; /* Previene desbordes horizontales */
+}
+
+nav {
+  background-color: rgb(255, 255, 255);
+  height: 4%;
+  position: fixed;
+  right: 0;
+  width: 20%;
+  display: flex;
+  justify-content: space-around;
+  z-index: 100;
+  font-size: 150%;
+  align-items: center;
+  border-bottom-left-radius: 30px;
+  border: solid rgb(31, 39, 49) 1px;
+}
+
+#fondo-presentacion {
+  background-size: 50%;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+#presentacion {
+  background-color: rgb(22, 28, 34);
+  height: 75%;
+  min-height: 600px;
+  width: 90%;
+  display: grid;
+  font-family: "consolas", Tahoma, Geneva, Verdana, sans-serif;
+  color: rgb(255, 255, 255);
+  font-size: 40px;
+  font-weight: 1500;
+  border-bottom-right-radius: 150px;
+  backdrop-filter: blur(1px); /* Requiere soporte moderno */
+  -webkit-backdrop-filter: blur(1px); /* Para compatibilidad con navegadores WebKit */
+  padding: 20px;
+  border: solid rgb(255, 255, 255) 2px;
+}
+
+
+.advertencia {
+  color: rgb(31, 39, 49);;
+}
+
+.nombre {
+  font-size: 100%;
+  display: grid;
+  align-items: center;
+}
+
+
+.container {
+  display: grid;
+  align-items: center;
+  position: relative;
+  overflow: hidden; /* Para evitar desbordes */
+}
+
+.Carlos, .Charliy {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  font-size: 24px;
+  transition: transform 3s ease;
+}
+
+.Carlos {
+  background-color: rgb(22, 28, 34);
+  font-size: 70px;
+  z-index: 2;
+}
+
+.Charliy {
+  background-color: rgb(22, 28, 34);
+  font-size: 60px;
+  z-index: 1;
+}
+
+.container:hover .Carlos {
+  transform: translateX(50%); /* Evita mover Carlos fuera de la vista completa */
+}
+
+#icons {
+  justify-items: auto;
+}
+
+
+#desc-icon {
+  display: grid;
+  font-size: auto;
+  grid-template-columns: 95% 5%;
+  align-items: right;
+}
+
+
+
+.icon-redes {
+  height: 100px;
+  padding: 10px;
+  margin-top: 50px;
+  margin-left: 100px;
+  justify-content: center;
+
+  border-top-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+  border: solid rgba(255, 255, 255, 0.1) 2px;
+}
+
+
+
+.aboutme {
+  font-size: 50px;
+  margin-top: 50px;
+  margin-bottom: 100px;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  margin: 100px;
+}
+
+
+.aboutme-cuadro {
+  font-size: 28px;
+  padding-top: 50px;
+  padding-bottom: 30px;
+}
+
+
+
+
+.galeria {
+  height: 100%;
+  padding: 20px;
+  margin: 50px;
+  display: grid;
+  justify-content: center;
+  grid-template-columns: 30% 70%;
+  border-top-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+  border: solid rgb(255, 255, 255) 2px;
+}
+
+.galeria-fotos {
+  padding: 10px;
+  margin: 10px;
+  display: grid;
+  grid-template-columns: 30% 5% 30% 5% 30%;
+}
+
+.galeria-hobbies {
+  padding: 20px;
+
+  margin: 50px;
+  display: grid;
+  justify-content: center;
+  border-top-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+  border: solid rgb(255, 255, 255) 2px;
+}
+
+.galeria-hobbies2 {
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+
+.galeria-cursos {
+  padding: 20px;
+  margin: 50px;
+  display: grid;
+  grid-template-rows: 1fr auto 1fr;
+  border-top-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+  border: solid rgb(255, 255, 255) 2px;
+}
+
+
+figure {
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+img {
+  width: auto;
+  max-width: 100%; 
+  height: auto; 
+  max-height: 90vh; 
+}
+
+
+.cursos{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.img-ev {
+  width: 100%;
+}
+
+.img-otros {
+  width: 90%;
+  max-height: 50%;
+}
+
+.img-hobbies {
+  width: 100%;
+  margin: 0;
+}
+
+.img-certificado {
+  width: 100%;
+  max-width: 800px;
+}
+
+
+.img-cursos{
+  width: 300px;
+  margin: 10px;
+
+}
+
+.minicursos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; 
+  align-items: center; 
+}
+
+
+.centrar-hobbies {
+  display: grid;
+  justify-content: center;
+}
+
+footer {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  justify-items: center;
+}
+
+
+p {
+  font-size: 20px;
+}
+
+
+
+a:link {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+}
+
+a:visited {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+}
+
+a:hover {
+  font-size: 1.1em;
+  text-decoration: none;
+}
+
+.a-blanca:link {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+}
+
+.a-blanca:visited {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+}
+
+.a-blanca:hover {
+  font-size: 1.1em;
+  text-decoration: none;
+}
+
+.a-nav:link {
+  color: rgb(31, 39, 49);
+  text-decoration: none;
+}
+
+.a-nav:visited {
+  color: rgb(31, 39, 49);
+  text-decoration: none;
+}
+
+.a-nav:hover {
+  font-size: 1.1em;
+  text-decoration: none;
+}
+
+h1 {
+  font-size: 30px;
+  color: rgb(255, 255, 255);
+  font-weight: 100px;
+  padding-left: 100px;
+}
+
+h2 {
+  color: white;
+  padding: 10px;
+}
+/* ADAPTATIVE RESPONSIVE MEDIA*/
+/* ADAPTATIVE RESPONSIVE MEDIA*/
+/* ADAPTATIVE RESPONSIVE MEDIA*/
+
+@media screen and (max-width: 768px) {
+  * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+  }
+
+  body {
+      font-size: 3rem;
+      padding: 1rem;
+ 
+  }
+
+  #fondo-presentacion {
+
+      padding: 20px;
+      border-radius: 8px; /* Bordes redondeados */
+  }
+
+  #presentacion {
+      text-align: center;
+      padding: 1rem;
+  }
+
+  .nombre {
+      margin-bottom: 1rem; /* Espacio entre nombre y descripción */
+  }
+
+  .Carlos, .Charliy {
+      font-size: 3rem;
+      color: white; /* Color del texto */
+      transition: transform 0.5s ease-in-out;
+  }
+
+  #desc-icon {
+      text-align: center;
+      margin: 20px 0;
+  }
+
+  #desc-icon span {
+      display: block; /* Cada línea en su propio bloque */
+      margin-bottom: 10px; /* Espacio entre las líneas */
+      color: white; /* Color del texto */
+  }
+
+
+  #icons {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr); /* Dos columnas */
+      gap: 10px; /* Espacio entre íconos */
+      margin-top: 10px; /* Espacio arriba de los íconos */
+  }
+
+  .icon-redes {
+      width: 60px; /* Tamaño del ícono */
+      height: 60px; /* Tamaño del ícono */
+      margin: 0 auto; /* Centra los íconos */
+  }
+
+  .aboutme {
+    font-size: 2rem;
+    margin: 1rem;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+
+
+
+  #inicio {
+    font-size: 1.5rem;
+    margin: 1rem;
+    display: flex;
+    flex-direction: column;
+    text-align: center; 
+  }
+
+  .galeria {
+    grid-template-columns: 1fr; /* Hace que sea una sola columna */
+    gap: 20px; /* Espacio entre los elementos */
+    padding: 10px;
+    margin: 20px;
+  }
+
+  .galeria span h1 {
+    font-size: 2rem; /* Tamaño ajustado del título */
+    text-align: left;
+  }
+
+  .galeria span p {
+    font-size: 1.5rem; /* Texto más pequeño */
+    line-height: 1.4;
+    text-align: left;
+  }
+
+  .slideshow-container {
+    width: 100%; /* Asegura que la imagen ocupe el 100% del ancho disponible */
+    display: flex;
+    flex-direction: column; /* Para que el texto aparezca debajo de la imagen */
+    align-items: center;
+    overflow: visible;
+  }
+
+  .img-otros {
+    width: 95vw; /* Ocupa el 95% del ancho del viewport */
+    max-width: 95vw; /* Asegúrate de que no se sobrepase el 95% del viewport */
+    margin-left: -2.5vw; /* Ajusta el margen para que sobresalga a la izquierda */
+    margin-right: -2.5vw; /* Ajusta el margen para que sobresalga a la derecha */
+    border-radius: 10px; /* Si quieres mantener un borde redondeado */
+  }
+
+  .text {
+    font-size: 1rem;
+    text-align: center;
+    margin-top: 10px;
+  }
+
+
+
+  .footer {
+    font-size: 1.1rem;
+  }
+
+  h1 {
+    font-size: 24px; /* Tamaño del encabezado */
+    margin: 10px 0; /* Espacio alrededor del encabezado */
+    color: white; /* Color del texto */
+}
+
+  
+
+}
+
+/* v2 */
+
+/* SCROLLBAR CHANGES */
+body::-webkit-scrollbar {
+  width: 5px;
+  background-color: black;
+}
+
+body::-webkit-scrollbar-thumb {
+  background: grey;
+  border-radius: 10px;
+}
+
+
