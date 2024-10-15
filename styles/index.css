@@ -414,6 +414,7 @@ h2 {
     gap: 20px; /* Espacio entre los elementos */
     padding: 10px;
     margin: 20px;
+    border: solid rgba(255, 255, 255, 0.1) 2px;
   }
 
   .galeria span h1 {
