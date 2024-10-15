@@ -371,14 +371,15 @@ h2 {
     transform: none;
   }
 
-  #desc-icon {
-    flex-direction: column;
-    justify-content: center;
-    padding: 1rem;
+ #desc-icon {
+    flex-direction: column; /* Alinea en columna en lugar de fila */
+    align-items: center;
+    text-align: center;
+    gap: 10px; /* Reduce el espacio entre los elementos */
   }
 
   .icon-redes {
-    width: 40px;
+    width: 40px; /* Reduce aún más el tamaño en móviles */
     height: 40px;
   }
 
